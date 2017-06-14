@@ -9,7 +9,7 @@ public class componentsDiagramGraph extends Graph {
 	@Override
 	public String getFileExtension() {
 		// TODO Auto-generated method stub
-		return null; //test
+		return null; //testgtdgfjkregn
 	}
 
 	@Override
