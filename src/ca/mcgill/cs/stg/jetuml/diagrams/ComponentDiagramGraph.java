@@ -42,7 +42,7 @@ import ca.mcgill.cs.stg.jetuml.graph.ObjectReferenceEdge;
  */
 public class ComponentDiagramGraph extends Graph
 {
-	private static final Node[] NODE_PROTOTYPES = new Node[3];
+	private static final Node[] NODE_PROTOTYPES = new Node[4];
 	private static final Edge[] EDGE_PROTOTYPES = new Edge[3];
 	
 	static
@@ -59,6 +59,7 @@ public class ComponentDiagramGraph extends Graph
 	    NODE_PROTOTYPES[1] = f;
 	      
 	    NODE_PROTOTYPES[2] = new NoteNode();
+	    NODE_PROTOTYPES[3] = new NoteNode();
 	    
 	    EDGE_PROTOTYPES[0] = new ObjectReferenceEdge();
 	    
