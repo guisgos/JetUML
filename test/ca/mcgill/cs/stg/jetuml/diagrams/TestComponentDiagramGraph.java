@@ -38,7 +38,7 @@ import ca.mcgill.cs.stg.jetuml.graph.ImplicitParameterNode;
 
 /**
  * @author Yuri
- * @author Igor
+ * @author Igor.
  */
 public class TestComponentDiagramGraph
 {
