@@ -87,23 +87,23 @@ public class ComponentNode extends RectangularNode
 		super.draw(pGraphics2D);
 		Color oldColor = pGraphics2D.getColor();
 		pGraphics2D.setColor(DEFAULT_COLOR);
-
+		
 		Shape path = getShape();
 		pGraphics2D.fill(path);
 		pGraphics2D.setColor(oldColor);
 		pGraphics2D.draw(path);
-
+		
 		Rectangle2D bounds = getBounds();
-		GeneralPath fold = new GeneralPath();
-		fold.moveTo((float)(bounds.getMaxX() - FOLD_X), (float)bounds.getY());
-		fold.lineTo((float)bounds.getMaxX() - FOLD_X, (float)bounds.getY() + FOLD_X);
-		fold.lineTo((float)bounds.getMaxX(), (float)(bounds.getY() + FOLD_Y));
-		fold.closePath();
-		oldColor = pGraphics2D.getColor();
+		bounds.setFrame(bounds.getMaxX() - 17, bounds.getMinY()+ 8, 15,10);
+		
+		//Rectangle2D bounds2 = getBounds();
+		//bounds.setFrame(bounds2.getX()+20,bounds2.getY()+30, 10,10);
+				
+		
 		pGraphics2D.setColor(pGraphics2D.getBackground());
-		pGraphics2D.fill(fold);
 		pGraphics2D.setColor(oldColor);      
-		pGraphics2D.draw(fold);      
+		pGraphics2D.draw(bounds);      
+		//pGraphics2D.draw(bounds2);     
       
 		aText.draw(pGraphics2D, getBounds());
 	}

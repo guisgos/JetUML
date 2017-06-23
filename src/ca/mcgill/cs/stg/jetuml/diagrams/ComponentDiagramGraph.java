@@ -27,6 +27,7 @@ import java.util.ResourceBundle;
 
 import ca.mcgill.cs.stg.jetuml.framework.MultiLineString;
 import ca.mcgill.cs.stg.jetuml.graph.ChildNode;
+import ca.mcgill.cs.stg.jetuml.graph.ComponentNode;
 import ca.mcgill.cs.stg.jetuml.graph.Edge;
 import ca.mcgill.cs.stg.jetuml.graph.FieldNode;
 import ca.mcgill.cs.stg.jetuml.graph.Graph;
@@ -59,7 +60,8 @@ public class ComponentDiagramGraph extends Graph
 	    NODE_PROTOTYPES[1] = f;
 	      
 	    NODE_PROTOTYPES[2] = new NoteNode();
-	    NODE_PROTOTYPES[3] = new NoteNode();
+	    
+	    NODE_PROTOTYPES[3] = new ComponentNode();
 	    
 	    EDGE_PROTOTYPES[0] = new ObjectReferenceEdge();
 	    
